@@ -1,0 +1,36 @@
+Store ID,Store Name,City,Country,ZIP Code,Latitude,Longitude
+1,Store New York,New York,United States,10001,40.7128,-74.006
+2,Store Los Angeles,Los Angeles,United States,90001,34.0522,-118.2437
+3,Store Chicago,Chicago,United States,60601,41.8781,-87.6298
+4,Store Houston,Houston,United States,77001,29.7604,-95.3698
+5,Store Phoenix,Phoenix,United States,85001,33.4484,-112.074
+6,Store 上海,上海,中国,200000,31.2304,121.4737
+7,Store 北京,北京,中国,100000,39.9042,116.4074
+8,Store 广州,广州,中国,510000,23.1291,113.2644
+9,Store 深圳,深圳,中国,518000,22.5429,114.0596
+10,Store 重庆,重庆,中国,400000,29.5638,106.5505
+11,Store Berlin,Berlin,Deutschland,10115,52.5125,13.3903
+12,Store Hamburg,Hamburg,Deutschland,20095,53.5503,9.992
+13,Store München,München,Deutschland,80331,48.1371,11.5763
+14,Store Köln,Köln,Deutschland,50667,50.938,6.9578
+15,Store Frankfurt am Main,Frankfurt am Main,Deutschland,60311,50.1145,8.6785
+16,Store London,London,United Kingdom,EC2P 2E,51.5072,-0.1275
+17,Store Birmingham,Birmingham,United Kingdom,B1 1AA,52.4862,-1.8904
+18,Store Glasgow,Glasgow,United Kingdom,G1 1AA,55.858,-4.259
+19,Store Liverpool,Liverpool,United Kingdom,L1 1AA,53.4084,-2.9916
+20,Store Bristol,Bristol,United Kingdom,BS1 1AA,51.4545,-2.5879
+21,Store Paris,Paris,France,75000,48.8656,2.343
+22,Store Marseille,Marseille,France,13000,43.2965,5.3698
+23,Store Lyon,Lyon,France,69000,45.764,4.8357
+24,Store Toulouse,Toulouse,France,31000,43.6047,1.4442
+25,Store Nice,Nice,France,06000,43.7,7.2684
+26,Store Madrid,Madrid,España,28001,40.438,-3.6905
+27,Store Barcelona,Barcelona,España,08001,41.387,2.1682
+28,Store Valencia,Valencia,España,46001,39.4693,-0.3766
+29,Store Sevilla,Sevilla,España,41001,37.3906,-5.9879
+30,Store Zaragoza,Zaragoza,España,50001,41.6419,-0.9046
+31,Store Lisboa,Lisboa,Portugal,1000-001,38.7167,-9.1333
+32,Store Porto,Porto,Portugal,4000-001,41.1496,-8.611
+33,Store Braga,Braga,Portugal,4700-001,41.5503,-8.4201
+34,Store Guimarães,Guimarães,Portugal,4800-001,41.4444,-8.2962
+35,Store Coimbra,Coimbra,Portugal,3000-001,40.2056,-8.4196
