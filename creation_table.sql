@@ -1,16 +1,18 @@
-CREATE TABLE Dim_discount(
-    discount_key  PRIMARY KEY,
-    percent_discount  NUMERIC(6,2) DEFAULT 0.00,
-    date_start_disc DATE NOT NULL,
-    date_end_disc DATE NOT NULL,
-    CHECK (date_start_disc <= date_end_disc)
+-- Table Dim_discount (correction "Discont" → "Discount")
+CREATE TABLE Dim_discount (
+    Discount_key SERIAL PRIMARY KEY,
+    Percent_discount DECIMAL(5,2) NOT NULL CHECK (Percent_discount BETWEEN 0 AND 100),
+    Date_start DATE NOT NULL,  
+    Date_end DATE NOT NULL, 
+    CONSTRAINT valid_dates CHECK (Date_end >= Date_start)
 );
-CREATE TABLE Dim_date(
-    date_key PRIMARY KEY,
-    full_date DATE NOT NULL UNIQUE,
-    jour INT NOT NULL CHECK (jour BETWEEN 1 AND 31),
-    jourSemaine VARCHAR(15) NOT NULL CHECK (JourSemaine IN ('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday','Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche')), 
-    mois    INT NOT NULL CHECK (mois BETWEEN 1 AND 12),
-    annee     INT NOT NULL,
-    saison  VARCHAR(15)
+
+-- Table Dim_product (gestion des espaces et description)
+CREATE TABLE Dim_product (
+    Product_key SERIAL PRIMARY KEY,
+    Category VARCHAR(100) NOT NULL,
+    Sub_Category VARCHAR(100),
+    Description TEXT,          
+    Sizes VARCHAR(50),
+    Production_cost DECIMAL(10,2) CHECK (Production_cost >= 0)
 );
