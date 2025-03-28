@@ -1,58 +1,10 @@
-@/comptes/E240578Y/airport-database/creation_table.sql
-DROP TABLE Fait_Transaction CASCADE CONSTRAINTS
-           *
-ERROR at line 1:
-ORA-00942: table or view does not exist
+IDEE REQUETES 
 
+- Produits les plus vendus (en quantité) sur une region donnéé et a quel periode 
+- Jour de la semaine le plus actif :
+- Évolution des ventes hebdomadaires :
+- Nombre de transactions avec remise 
+- Produits avec le meilleur ratio profit / coût  par an 
+- Top 3 des produits par pays :
 
-DROP TABLE Dim_Discount CASCADE CONSTRAINTS
-           *
-ERROR at line 1:
-ORA-00942: table or view does not exist
-
-
-DROP TABLE Dim_Product CASCADE CONSTRAINTS
-           *
-ERROR at line 1:
-ORA-00942: table or view does not exist
-
-
-DROP TABLE Dim_Store CASCADE CONSTRAINTS
-           *
-ERROR at line 1:
-ORA-00942: table or view does not exist
-
-
-DROP TABLE Dim_Date CASCADE CONSTRAINTS
-           *
-ERROR at line 1:
-ORA-00942: table or view does not exist
-
-
-
-Table created.
-
-
-Table created.
-
-
-Table created.
-
-
-Table created.
-
-SP2-0734: unknown command beginning "CONSTRAINT..." - rest of line ignored.
-SP2-0734: unknown command beginning "REFERENCES..." - rest of line ignored.
-SP2-0734: unknown command beginning "CONSTRAINT..." - rest of line ignored.
-SP2-0734: unknown command beginning "REFERENCES..." - rest of line ignored.
-SP2-0044: For a list of known commands enter HELP
-and to leave enter EXIT.
-SP2-0734: unknown command beginning "CONSTRAINT..." - rest of line ignored.
-SP2-0734: unknown command beginning "REFERENCES..." - rest of line ignored.
-SP2-0734: unknown command beginning "CONSTRAINT..." - rest of line ignored.
-SP2-0734: unknown command beginning "REFERENCES..." - rest of line ignored.
-SP2-0044: For a list of known commands enter HELP
-and to leave enter EXIT.
-SP2-0042: unknown command ")" - rest of line ignored.
-SQL> 
 
