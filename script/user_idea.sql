@@ -7,6 +7,8 @@ CREATE ROLE category_manager;
 CREATE ROLE discount_admin;
 CREATE ROLE analyste;
 CREATE ROLE super_admin;
+CREATE ROLE client_user;
+
 
 -- ======================================================
 -- 2. UTILISATEURS PAR MAGASIN (Store_ID dans stores.csv)
@@ -43,3 +45,12 @@ GRANT analyste TO analyste_commercial;
 -- ======================================================
 CREATE USER admin WITH PASSWORD 'adminpass';
 GRANT super_admin TO admin;
+
+-- ======================================================
+-- 7 CLIENT  (accès a ses données )
+-- ======================================================
+CREATE USER client_1 WITH PASSWORD 'client1pass';
+CREATE USER client_2 WITH PASSWORD 'client2pass';
+
+GRANT client_user TO client_1, client_2;
+
