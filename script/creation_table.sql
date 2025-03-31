@@ -163,8 +163,9 @@ CREATE SEQUENCE seq_discount_id START WITH 1 INCREMENT BY 1 NOCACHE;
 CREATE SEQUENCE seq_product_id START WITH 1 INCREMENT BY 1 NOCACHE;
 CREATE SEQUENCE seq_store_id START WITH 1 INCREMENT BY 1 NOCACHE;
 CREATE SEQUENCE seq_date_id START WITH 1 INCREMENT BY 1 NOCACHE;
-CREATE SEQUENCE seq_transaction_id START WITH 1 INCREMENT BY 1 NOCACHE;
 CREATE SEQUENCE seq_client_id START WITH 1 INCREMENT BY 1 NOCACHE;
+
+CREATE SEQUENCE seq_transaction_id START WITH 1 INCREMENT BY 1 NOCACHE;
 
 
 -- Création des index
@@ -172,7 +173,6 @@ CREATE INDEX idx_fact_date ON Fait_Transaction(Date_ID);
 CREATE INDEX idx_fact_product ON Fait_Transaction(Product_ID);
 CREATE INDEX idx_fact_store ON Fait_Transaction(Store_ID);
 CREATE INDEX idx_fact_discount ON Fait_Transaction(Discount_ID);
-CREATE INDEX idx_fact_client ON Fait_Transaction(Client_ID);
 
 
 COMMIT;
