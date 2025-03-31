@@ -7,5 +7,4 @@ FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
     Country,
     City,
     Age,
-    Signup_Date DATE "YYYY-MM-DD"
 )
