@@ -173,6 +173,7 @@ CREATE INDEX idx_fact_date ON Fait_Transaction(Date_ID);
 CREATE INDEX idx_fact_product ON Fait_Transaction(Product_ID);
 CREATE INDEX idx_fact_store ON Fait_Transaction(Store_ID);
 CREATE INDEX idx_fact_discount ON Fait_Transaction(Discount_ID);
+CREATE INDEX idx_fact_client ON Fait_Transaction(Client_ID);
 
 
 COMMIT;
