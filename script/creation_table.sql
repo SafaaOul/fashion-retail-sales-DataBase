@@ -34,6 +34,14 @@ EXCEPTION
 END;
 /
 
+BEGIN
+   EXECUTE IMMEDIATE 'DROP TABLE Dim_Client CASCADE CONSTRAINTS';
+EXCEPTION
+   WHEN OTHERS THEN NULL;
+END;
+/
+
+
 -- Suppression des séquences si elles existent
 BEGIN
    EXECUTE IMMEDIATE 'DROP SEQUENCE seq_discount_id';
@@ -65,6 +73,12 @@ END;
 
 BEGIN
    EXECUTE IMMEDIATE 'DROP SEQUENCE seq_transaction_id';
+EXCEPTION
+   WHEN OTHERS THEN NULL;
+END;
+/
+BEGIN
+   EXECUTE IMMEDIATE 'DROP SEQUENCE seq_client_id';
 EXCEPTION
    WHEN OTHERS THEN NULL;
 END;
@@ -114,6 +128,15 @@ CREATE TABLE Dim_Date (
     WeekOfYear NUMBER,
     CONSTRAINT PK_Date PRIMARY KEY (Date_ID)
 );
+CREATE TABLE Dim_Client (
+    Client_ID NUMBER,
+    Country VARCHAR2(50),
+    City VARCHAR2(50),
+    Age NUMBER,
+    Signup_Date DATE,
+    CONSTRAINT PK_Client PRIMARY KEY (Client_ID),
+    CONSTRAINT valid_age CHECK (Age >= 0 AND Age <= 120)
+);
 
 CREATE TABLE Fait_Transaction (
     Transactions_ID NUMBER,
@@ -121,6 +144,7 @@ CREATE TABLE Fait_Transaction (
     Discount_ID NUMBER,
     Product_ID NUMBER,
     Store_ID NUMBER,
+    Client_ID NUMBER,
     Quantity NUMBER,
     Unit_Price NUMBER(10, 2),
     Line_Total NUMBER(10, 2),
@@ -130,7 +154,9 @@ CREATE TABLE Fait_Transaction (
     CONSTRAINT FK_Transactions_Date FOREIGN KEY (Date_ID) REFERENCES Dim_Date(Date_ID),
     CONSTRAINT FK_Transactions_Discount FOREIGN KEY (Discount_ID) REFERENCES Dim_Discount(Discount_ID),
     CONSTRAINT FK_Transactions_Product FOREIGN KEY (Product_ID) REFERENCES Dim_Product(Product_ID),
-    CONSTRAINT FK_Transactions_Store FOREIGN KEY (Store_ID) REFERENCES Dim_Store(Store_ID)
+    CONSTRAINT FK_Transactions_Store FOREIGN KEY (Store_ID) REFERENCES Dim_Store(Store_ID),
+    CONSTRAINT FK_Transactions_Client FOREIGN KEY (Client_ID) REFERENCES Dim_Client(Client_ID)
+
 );
 
 -- Création des séquences
@@ -139,11 +165,15 @@ CREATE SEQUENCE seq_product_id START WITH 1 INCREMENT BY 1 NOCACHE;
 CREATE SEQUENCE seq_store_id START WITH 1 INCREMENT BY 1 NOCACHE;
 CREATE SEQUENCE seq_date_id START WITH 1 INCREMENT BY 1 NOCACHE;
 CREATE SEQUENCE seq_transaction_id START WITH 1 INCREMENT BY 1 NOCACHE;
+CREATE SEQUENCE seq_client_id START WITH 1 INCREMENT BY 1 NOCACHE;
+
 
 -- Création des index
 CREATE INDEX idx_fact_date ON Fait_Transaction(Date_ID);
 CREATE INDEX idx_fact_product ON Fait_Transaction(Product_ID);
 CREATE INDEX idx_fact_store ON Fait_Transaction(Store_ID);
 CREATE INDEX idx_fact_discount ON Fait_Transaction(Discount_ID);
+CREATE INDEX idx_fact_client ON Fait_Transaction(Client_ID);
+
 
 COMMIT;
