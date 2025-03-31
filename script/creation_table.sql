@@ -133,7 +133,6 @@ CREATE TABLE Dim_Client (
     Country VARCHAR2(50),
     City VARCHAR2(50),
     Age NUMBER,
-    Signup_Date DATE,
     CONSTRAINT PK_Client PRIMARY KEY (Client_ID),
     CONSTRAINT valid_age CHECK (Age >= 0 AND Age <= 120)
 );
