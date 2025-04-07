@@ -1,4 +1,4 @@
-Start,End,Discont,Discount Key
+Start,End,Percent_discount,Discount Key
 2020-01-01,2020-01-10,0.4,1
 2020-01-01,2020-01-10,0.4,2
 2020-01-01,2020-01-10,0.4,3
