@@ -68,7 +68,7 @@ CREATE TABLE Dim_Date (
 -- Table Dim_Discount
 CREATE TABLE Dim_Discount (
     Discount_ID NUMBER PRIMARY KEY,
-    Percent_discount NUMBER(3,2) NOT NULL CHECK (Percent_discount BETWEEN 0 AND 100),
+    Percent_discount NUMBER(4,2),
     Date_start DATE NOT NULL,
     Date_end DATE NOT NULL,
     CONSTRAINT valid_dates CHECK (Date_end >= Date_start)
