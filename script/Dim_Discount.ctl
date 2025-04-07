@@ -1,0 +1,11 @@
+OPTIONS (SKIP=1)
+LOAD DATA
+INFILE 'Data/discounts.csv'
+INTO TABLE Dim_Discount
+FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+(
+    Date_start DATE 'YYYY-MM-DD',
+	Date_end DATE 'YYYY-MM-DD',
+	Percent_discount "TO_NUMBER(:PERCENT_DISCOUNT, '999.99', 'NLS_NUMERIC_CHARACTERS=''.,''')",
+	Discount_ID
+)
