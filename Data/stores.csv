@@ -5,14 +5,14 @@ Store ID,Store Name,City,Country,ZIP Code,Latitude,Longitude
 4,Store Houston,Houston,United States,77001,29.7604,-95.3698
 5,Store Phoenix,Phoenix,United States,85001,33.4484,-112.074
 6,Store Shanghai,Shanghai,China,200000,31.2304,121.4737
-7,Store Pékin,Pékin,China,100000,39.9042,116.4074
+7,Store Pekin,Pekin,China,100000,39.9042,116.4074
 8,Store Canton,Canton,China,510000,23.1291,113.2644
 9,Store Shenzhen,Shenzhen,China,518000,22.5429,114.0596
 10,Store Chongqing,Chongqing,China,400000,29.5638,106.5505
 11,Store Berlin,Berlin,Deutschland,10115,52.5125,13.3903
 12,Store Hamburg,Hamburg,Deutschland,20095,53.5503,9.992
-13,Store München,München,Deutschland,80331,48.1371,11.5763
-14,Store Köln,Köln,Deutschland,50667,50.938,6.9578
+13,Store Munchen,Munchen,Deutschland,80331,48.1371,11.5763
+14,Store Koln,Koln,Deutschland,50667,50.938,6.9578
 15,Store Frankfurt am Main,Frankfurt am Main,Deutschland,60311,50.1145,8.6785
 16,Store London,London,United Kingdom,EC2P 2E,51.5072,-0.1275
 17,Store Birmingham,Birmingham,United Kingdom,B1 1AA,52.4862,-1.8904
@@ -24,13 +24,13 @@ Store ID,Store Name,City,Country,ZIP Code,Latitude,Longitude
 23,Store Lyon,Lyon,France,69000,45.764,4.8357
 24,Store Toulouse,Toulouse,France,31000,43.6047,1.4442
 25,Store Nice,Nice,France,06000,43.7,7.2684
-26,Store Madrid,Madrid,España,28001,40.438,-3.6905
-27,Store Barcelona,Barcelona,España,08001,41.387,2.1682
-28,Store Valencia,Valencia,España,46001,39.4693,-0.3766
-29,Store Sevilla,Sevilla,España,41001,37.3906,-5.9879
-30,Store Zaragoza,Zaragoza,España,50001,41.6419,-0.9046
+26,Store Madrid,Madrid,Spain,28001,40.438,-3.6905
+27,Store Barcelona,Barcelona,Spain,08001,41.387,2.1682
+28,Store Valencia,Valencia,Spain,46001,39.4693,-0.3766
+29,Store Sevilla,Sevilla,Spain,41001,37.3906,-5.9879
+30,Store Zaragoza,Zaragoza,Spain,50001,41.6419,-0.9046
 31,Store Lisboa,Lisboa,Portugal,1000-001,38.7167,-9.1333
 32,Store Porto,Porto,Portugal,4000-001,41.1496,-8.611
 33,Store Braga,Braga,Portugal,4700-001,41.5503,-8.4201
-34,Store Guimarães,Guimarães,Portugal,4800-001,41.4444,-8.2962
+34,Store Guimaraes,Guimaraes,Portugal,4800-001,41.4444,-8.2962
 35,Store Coimbra,Coimbra,Portugal,3000-001,40.2056,-8.4196

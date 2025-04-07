@@ -1,4 +1,4 @@
-Date_start,Date_end,Discont,Discount_ID
+Start,End,Discont,Discount Key
 2020-01-01,2020-01-10,0.4,1
 2020-01-01,2020-01-10,0.4,2
 2020-01-01,2020-01-10,0.4,3
