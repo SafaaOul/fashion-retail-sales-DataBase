@@ -1,3 +1,4 @@
+OPTIONS (SKIP=1)
 LOAD DATA
 INFILE 'Data/date.csv'
 INTO TABLE Dim_Date
